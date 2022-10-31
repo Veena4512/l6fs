@@ -1,0 +1,34 @@
+### GET types
+GET http://localhost:5001/types
+
+### GET type
+GET http://localhost:5001/types/dell
+
+
+### ADD A type
+POST http://localhost:5001/addtype
+Content-Type: application/json
+
+{
+    "name": "jio",
+    "status": "type"
+}
+
+### UPDATE STATUS OF A type
+PATCH http://localhost:5001/changestatus
+Content-Type: application/json
+
+{
+    "name": "apple",
+    "newStatus": "type"
+}
+
+
+###DELETE A type
+DELETE http://localhost:5001/types
+Content-Type: application/json
+
+{
+    "name": "jio"
+}
+
